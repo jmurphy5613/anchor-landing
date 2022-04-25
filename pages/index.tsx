@@ -12,6 +12,7 @@ const Home : NextPage = () => {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+        justifyContent: 'center',
       }}
     >
       <Typography 
@@ -28,6 +29,10 @@ const Home : NextPage = () => {
         variant="h3"
         style={{
           color: '#D4D4D4',
+          textAlign: 'center',
+          width: '45%',
+          fontSize: '1.5rem',
+          marginTop: '1.3rem'
         }}
       >
         we match students with companies to fill real world positions that advance their careers
