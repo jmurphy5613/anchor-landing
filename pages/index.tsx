@@ -1,5 +1,7 @@
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import { NextPage } from 'next';
+
+import TitleDescription from '../components/homepage/TitleDescriptio';
 
 const Home : NextPage = () => {
 
@@ -11,32 +13,26 @@ const Home : NextPage = () => {
         width: '100vw',
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
+        textAlign: 'left'
       }}
     >
-      <Typography 
-        variant="h1"
-        style={{
-          color: '#ffffff',
+      <Box
+        sx={{
+          maxWidth: '60%',
+          minWidth: '300px',
+          margin: '0 0 0 2rem',
+          display: 'flex',
+          justifyContent: 'center',
+          flexDirection: 'column',
+          padding: '0 2rem',
           fontSize: '4rem',
-          fontWeight: 'bold',
+          color: '#eee',
+          height: '100vh',
+          zIndex: '1'
         }}
       >
-        unlocking the talent of the top high school students
-      </Typography>
-      <Typography 
-        variant="h3"
-        style={{
-          color: '#D4D4D4',
-          textAlign: 'center',
-          width: '45%',
-          fontSize: '1.5rem',
-          marginTop: '1.3rem'
-        }}
-      >
-        we match students with companies to fill real world positions that advance their careers
-      </Typography>
+        <TitleDescription />
+      </Box>
     </Box>
   );
 };
