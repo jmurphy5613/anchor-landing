@@ -1,5 +1,5 @@
 import Typography from '@mui/material/Typography';
-
+import AnimatedTitle from './AnimatedTitle';
 
 const TitleDescription = () => {
     return (
@@ -14,6 +14,7 @@ const TitleDescription = () => {
             >
                 create bets on crypto price movements of
             </Typography>
+            <AnimatedTitle />
             <Typography 
                 variant="h3"
                 style={{
