@@ -2,6 +2,7 @@ import { Box } from '@mui/material';
 import { NextPage } from 'next';
 
 import TitleDescription from '../components/homepage/TitleDescriptio';
+import ButtonNavigation from '../components/homepage/ButtonNavigation';
 
 const Home : NextPage = () => {
 
@@ -20,7 +21,7 @@ const Home : NextPage = () => {
         sx={{
           maxWidth: '50%',
           minWidth: '300px',
-          margin: '0 0 0 2rem',
+          margin: '0 0 0 7%',
           display: 'flex',
           justifyContent: 'center',
           flexDirection: 'column',
@@ -32,6 +33,7 @@ const Home : NextPage = () => {
         }}
       >
         <TitleDescription />
+        <ButtonNavigation />
       </Box>
     </Box>
   );
