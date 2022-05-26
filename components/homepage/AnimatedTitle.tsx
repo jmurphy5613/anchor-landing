@@ -40,7 +40,7 @@ const AnimatedTitle: React.FC<{}> = () => {
             overflow: 'hidden',
             display: 'inline-block',
             position: 'absolute',
-            width: '80%',
+            width: '30%',
             paddingLeft: '1rem'
         }}>
             {transitions((style, i) => {
