@@ -18,7 +18,7 @@ const Home : NextPage = () => {
     >
       <Box
         sx={{
-          maxWidth: '60%',
+          maxWidth: '50%',
           minWidth: '300px',
           margin: '0 0 0 2rem',
           display: 'flex',

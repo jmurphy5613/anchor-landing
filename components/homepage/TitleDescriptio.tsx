@@ -12,15 +12,14 @@ const TitleDescription = () => {
                     fontWeight: 'bold',
                 }}
             >
-                create bets on crypto price movements of
+                create bets on crypto price movements of <AnimatedTitle /> 
             </Typography>
-            <AnimatedTitle />
             <Typography 
                 variant="h3"
                 style={{
                     color: '#D4D4D4',
-                    width: '45%',
                     fontSize: '1.5rem',
+                    marginTop: '1rem'
                 }}
             >
                 we allow you to bet against other users on the future prices of all the top crypto currencies

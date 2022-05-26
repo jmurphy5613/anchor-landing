@@ -9,19 +9,10 @@ const AnimatedTitle: React.FC<{}> = () => {
     const [index, set] = React.useState(0);
 
     const slides = [
-        {
-            label: 'Ethereum',
-            color: '#7694FF',
-        },
-        {
-            label: 'Polygon',
-            color: '#794FDD',
-        },
-        { label: 'BSC', color: '#F5AA15' },
-        { label: 'Avalanche', color: '#FF3500' },
-        { label: 'Fantom', color: '#a2f5eb' },
-        { label: 'Celo', color: '#14b094' },
-        { label: 'Optimism', color: '#FF3500' },
+        { label: 'Bitcoin', color: '#F7931A' },
+        { label: 'Ethereum', color: '#7694FF'},
+        { label: 'Solana', color: '#794FDD'},
+        { label: 'Tether', color: '#14b094' },
     ];
 
     const transitions = useTransition(index, {
@@ -44,7 +35,14 @@ const AnimatedTitle: React.FC<{}> = () => {
     }, [slides.length]);
 
     return (
-        <div>
+        <div style={{
+            height: '90px',
+            overflow: 'hidden',
+            display: 'inline-block',
+            position: 'absolute',
+            width: '80%',
+            paddingLeft: '1rem'
+        }}>
             {transitions((style, i) => {
                 return (
                     <animated.span
